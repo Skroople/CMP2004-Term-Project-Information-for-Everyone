@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors (Indigo) -->
+    <color name="md_theme_light_primary">#3F51B5</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#E0E8F9</color>
+    <color name="md_theme_light_onPrimaryContainer">#0B1B60</color>
+    
+    <!-- Secondary Colors (Soft Blue/Teal accents) -->
+    <color name="md_theme_light_secondary">#039BE5</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#CBE6FF</color>
+    <color name="md_theme_light_onSecondaryContainer">#001E30</color>
+
+    <!-- Background and Surface -->
+    <color name="md_theme_light_background">#F8F9FA</color>
+    <color name="md_theme_light_onBackground">#1A1C1E</color>
+    <color name="md_theme_light_surface">#FFFFFF</color>
+    <color name="md_theme_light_onSurface">#1A1C1E</color>
+    
+    <!-- Utilities -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#202124</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="card_background">#FFFFFF</color>
+</resources>
