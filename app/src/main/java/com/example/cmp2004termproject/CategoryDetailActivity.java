@@ -38,6 +38,8 @@ public class CategoryDetailActivity extends AppCompatActivity implements InfoIte
         tvCategoryName = findViewById(R.id.tvCategoryName);
         tvCategoryDesc = findViewById(R.id.tvCategoryDesc);
         tvTipText = findViewById(R.id.tvTipText);
+        
+        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
         recyclerView = findViewById(R.id.recyclerView);
 
         Intent intent = getIntent();
