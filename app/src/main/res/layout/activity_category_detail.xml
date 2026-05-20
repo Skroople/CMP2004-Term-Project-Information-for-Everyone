@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_theme_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@color/md_theme_light_primary"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_light_onPrimary" />
+
+        <TextView
+            android:id="@+id/tvCategoryDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:alpha="0.85"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTipOfTheDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/md_theme_light_secondaryContainer">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Did you know?"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/md_theme_light_onSecondaryContainer" />
+                
+            <TextView
+                android:id="@+id/tvTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading today's tip..."
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/md_theme_light_onSecondaryContainer" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+</LinearLayout>
