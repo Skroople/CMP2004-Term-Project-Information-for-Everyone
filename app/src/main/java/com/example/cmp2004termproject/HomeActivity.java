@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         CardView cardHealth = findViewById(R.id.cardHealth);
         CardView cardLegal = findViewById(R.id.cardLegal);
         CardView cardSocial = findViewById(R.id.cardSocial);
+        CardView cardEmergency = findViewById(R.id.cardEmergency);
         LinearLayout titleContainer = findViewById(R.id.titleContainer);
 
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
@@ -37,10 +38,16 @@ public class HomeActivity extends AppCompatActivity {
         cardHealth.startAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_long));
         cardLegal.startAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_long));
         cardSocial.startAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_long));
+        cardEmergency.startAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_long));
 
         cardHealth.setOnClickListener(v -> openCategory("health"));
         cardLegal.setOnClickListener(v -> openCategory("legal"));
         cardSocial.setOnClickListener(v -> openCategory("social"));
+        cardEmergency.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, AboutActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        });
 
         checkNotificationPermission();
     }
