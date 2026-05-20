@@ -27,6 +27,8 @@ public class AboutActivity extends AppCompatActivity {
 
         View btnSendEmail = findViewById(R.id.btnSendEmail);
         View btnCallHelp = findViewById(R.id.btnCallHelp);
+        
+        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
 
         btnSendEmail.setOnClickListener(v -> sendEmail());
         btnCallHelp.setOnClickListener(v -> makePhoneCall());

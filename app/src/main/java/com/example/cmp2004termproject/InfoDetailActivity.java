@@ -32,6 +32,8 @@ public class InfoDetailActivity extends AppCompatActivity {
 
         tvTitle.setText(title);
         tvContent.setText(content);
+        
+        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
         tvSummary.setText(summary);
 
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
