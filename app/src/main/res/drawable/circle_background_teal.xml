@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
-    <!-- Minimalist Dusty Purple -->
-    <solid android:color="#E8DEF8" />
+    <!-- Saturated Deep Purple -->
+    <solid android:color="#673AB7" />
 </shape>
