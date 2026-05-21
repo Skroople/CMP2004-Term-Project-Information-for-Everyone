@@ -9,8 +9,7 @@
     <ImageView
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/ic_launcher_foreground"
-        android:tint="@color/white"
+        android:src="@drawable/app_logo"
         android:contentDescription="App Icon" />
 
     <TextView
