@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Override colors for Dark Mode so the app turns black/dark -->
+    <!-- Override colors for Dark Mode Minimalist Purple -->
     
-    <!-- Background turns to very dark gray -->
-    <color name="md_theme_light_background">#121212</color>
+    <!-- Background turns to very dark purple/black -->
+    <color name="md_theme_light_background">#141218</color>
     
-    <!-- Card backgrounds (currently hardcoded to 'white') turn to dark surface -->
-    <color name="white">#1E1E1E</color> 
+    <!-- Card backgrounds -->
+    <color name="white">#211F26</color> 
     
-    <!-- Text colors invert to be readable on dark background -->
-    <color name="text_primary">#E3E3E3</color>
-    <color name="text_secondary">#A0A0A0</color>
+    <!-- Text colors invert to be readable -->
+    <color name="text_primary">#E6E1E5</color>
+    <color name="text_secondary">#CAC4D0</color>
     
     <!-- Primary theme colors get a bit lighter/softer for dark mode -->
-    <color name="md_theme_light_primary">#9FA8DA</color>
-    <color name="md_theme_light_primaryContainer">#3949AB</color>
+    <color name="md_theme_light_primary">#D0BCFF</color>
+    <color name="md_theme_light_primaryContainer">#4F378B</color>
     
     <color name="black">#FFFFFF</color>
 </resources>
