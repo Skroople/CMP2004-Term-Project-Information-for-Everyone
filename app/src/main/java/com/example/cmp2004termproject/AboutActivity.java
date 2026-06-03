@@ -1,13 +1,17 @@
 package com.example.cmp2004termproject;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -57,8 +61,32 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     private void makePhoneCall() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                && ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.CALL_PHONE}, 201);
+            return;
+        }
+        placeCall();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @androidx.annotation.NonNull String[] permissions,
+                                           @androidx.annotation.NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 201) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                placeCall();
+            } else {
+                Toast.makeText(this, "Call permission denied", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void placeCall() {
         try {
-            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(Uri.parse("tel:112"));
             startActivity(callIntent);
         } catch (Exception e) {

@@ -116,15 +116,6 @@ public class CategoryDetailActivity extends AppCompatActivity implements InfoIte
         }).execute(url);
     }
 
-    private int getCategoryPostId() {
-        switch (categoryId) {
-            case "health": return 1;
-            case "legal": return 2;
-            case "social": return 3;
-            default: return 1;
-        }
-    }
-
     @Override
     public void onItemClick(InfoItem item) {
         Intent intent = new Intent(CategoryDetailActivity.this, InfoDetailActivity.class);
