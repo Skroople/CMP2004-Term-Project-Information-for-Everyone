@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,9 +43,6 @@ public class CategoryDetailActivity extends AppCompatActivity implements InfoIte
 
         Intent intent = getIntent();
         categoryId = intent.getStringExtra("CATEGORY_ID");
-        String categoryName = intent.getStringExtra("CATEGORY_NAME");
-
-        tvCategoryName.setText(categoryName);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         itemList = new ArrayList<>();

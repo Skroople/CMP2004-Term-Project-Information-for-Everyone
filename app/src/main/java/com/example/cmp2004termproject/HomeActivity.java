@@ -82,7 +82,6 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, CategoryDetailActivity.class);
             intent.putExtra("CATEGORY_ID", categoryId);
             intent.putExtra("CATEGORY_NAME", category.getName());
-            intent.putExtra("CATEGORY_ICON", category.getIconName());
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }
