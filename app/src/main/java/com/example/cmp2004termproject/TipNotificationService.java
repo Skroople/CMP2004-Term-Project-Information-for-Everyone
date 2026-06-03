@@ -34,7 +34,7 @@ public class TipNotificationService extends Service {
             NotificationChannel channel = new NotificationChannel(
                     CHANNEL_ID,
                     "Tip of the Day",
-                    NotificationManager.IMPORTANCE_DEFAULT
+                    NotificationManager.IMPORTANCE_HIGH
             );
             channel.setDescription("Daily tips and information for disadvantaged individuals");
 
@@ -62,7 +62,7 @@ public class TipNotificationService extends Service {
                 .setContentText(tip.getMessage())
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(
                         tip.getMessage() + "\n\nCategory: " + tip.getCategory()))
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true);
 
