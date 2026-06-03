@@ -18,12 +18,6 @@ public class InfoCategory {
     public String getId() { return id; }
     public String getName() { return name; }
     public String getDescription() { return description; }
-    public String getIconName() { return iconName; }
     public InfoItem[] getItems() { return items; }
 
-    public void setId(String id) { this.id = id; }
-    public void setName(String name) { this.name = name; }
-    public void setDescription(String description) { this.description = description; }
-    public void setIconName(String iconName) { this.iconName = iconName; }
-    public void setItems(InfoItem[] items) { this.items = items; }
 }

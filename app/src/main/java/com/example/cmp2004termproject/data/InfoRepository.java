@@ -34,11 +34,6 @@ public class InfoRepository {
         return null;
     }
 
-    public InfoItem[] getItemsByCategoryId(String categoryId) {
-        InfoCategory cat = getCategoryById(categoryId);
-        return cat != null ? cat.getItems() : new InfoItem[0];
-    }
-
     public TipItem[] getAllTips() {
         return new TipItem[] {
             new TipItem(1, "Hydration", "Remember to drink at least 8 glasses of water today! Staying hydrated is essential for your health.", "Health"),
