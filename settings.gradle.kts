@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CMP2004 Term Project"
+rootProject.name = "CMP2004-Term-Project-Information for Everyone"
 include(":app")
