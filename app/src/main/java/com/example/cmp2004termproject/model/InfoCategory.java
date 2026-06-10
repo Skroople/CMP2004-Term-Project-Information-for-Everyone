@@ -4,14 +4,12 @@ public class InfoCategory {
     private String id;
     private String name;
     private String description;
-    private String iconName;
     private InfoItem[] items;
 
-    public InfoCategory(String id, String name, String description, String iconName, InfoItem[] items) {
+    public InfoCategory(String id, String name, String description, InfoItem[] items) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.iconName = iconName;
         this.items = items;
     }
 

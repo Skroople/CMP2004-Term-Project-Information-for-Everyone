@@ -65,7 +65,6 @@ public class InfoRepository {
             "health",
             "Health Information",
             "Access reliable health tips and medical information",
-            "ic_health",
             new InfoItem[] {
                 new InfoItem("h1", "Daily Health Tips",
                     "1. Drink Water: Aim for 8 glasses daily to stay hydrated.\n\n" +
@@ -115,7 +114,6 @@ public class InfoRepository {
             "legal",
             "Legal Rights",
             "Know your rights and get legal help",
-            "ic_legal",
             new InfoItem[] {
                 new InfoItem("l1", "Know Your Basic Rights",
                     "Every person has fundamental rights:\n\n" +
@@ -166,7 +164,6 @@ public class InfoRepository {
             "social",
             "Social Support Services",
             "Find help with housing, food, and community resources",
-            "ic_social",
             new InfoItem[] {
                 new InfoItem("s1", "Emergency Assistance",
                     "If you need immediate help:\n\n" +

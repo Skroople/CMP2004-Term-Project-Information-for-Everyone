@@ -13,7 +13,6 @@ public class InfoItem {
         this.summary = summary;
     }
 
-    public String getId() { return id; }
     public String getTitle() { return title; }
     public String getContent() { return content; }
     public String getSummary() { return summary; }

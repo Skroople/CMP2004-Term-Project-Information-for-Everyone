@@ -13,7 +13,6 @@ public class TipItem {
         this.category = category;
     }
 
-    public int getId() { return id; }
     public String getTitle() { return title; }
     public String getMessage() { return message; }
     public String getCategory() { return category; }
