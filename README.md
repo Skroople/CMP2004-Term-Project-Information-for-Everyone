@@ -37,7 +37,7 @@ This project was developed as the Term Project for the **CMP2004 Advanced Progra
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/CMP2004-Term-Project.git
+   git clone https://github.com/Skroople/CMP2004-Term-Project-Information-for-Everyone.git
    ```
 2. Open the project in **Android Studio**.
 3. Allow Gradle to sync and download all necessary dependencies.
