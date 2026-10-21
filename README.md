@@ -6,7 +6,7 @@
 
 This project was developed as the Term Project for the **CMP2004 Advanced Programming** course (Spring 2025–2026).
 
-**Developers:** Mehmet Eren Ekşi & Yiğit Erel
+**Developers:** [@Skroople](https://github.com/Skroople) and a classmate, as a two-person team project.
 
 ---
 
@@ -37,7 +37,7 @@ This project was developed as the Term Project for the **CMP2004 Advanced Progra
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/Skroople/CMP2004-Term-Project-Information-for-Everyone.git
+   git clone https://github.com/Skroople/information-for-everyone.git
    ```
 2. Open the project in **Android Studio**.
 3. Allow Gradle to sync and download all necessary dependencies.
